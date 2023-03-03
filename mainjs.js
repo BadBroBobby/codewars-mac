@@ -18,3 +18,22 @@ function divCon(x){
   
   return intArr-strArr
 }  
+
+//8 kyu
+//Power
+
+//Solution
+function numberToPower(number, power){
+  console.info(Math.log2(1024));
+  // Code here
+  
+  let num = number
+    
+  if(power === 0){
+    return 1
+  }
+  
+  
+  for(let i = 1; i < power; i++){
+    num *= number
+  }
