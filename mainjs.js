@@ -38,3 +38,35 @@ function numberToPower(number, power){
     num *= number
   }
 }
+
+//7 kyu
+//Find the vowels
+function vowelIndices(word){
+  //your code here
+  const vowels = ["a", "e", "i", "o", "u", "y"]
+  let arrOfVowels = []
+  
+  word.toLowerCase().split("").forEach( (letter, index) => {
+    if(vowels.includes(letter)){
+      arrOfVowels.push(index +1)
+    }
+  })
+  return arrOfVowels
+}
+
+//8 kyu
+//ASCII Total
+
+//Solution
+function uniTotal (string) {
+  // total up dem unicodes!
+    let num = 0
+    if(string.length == 0){
+      return 0
+    }else{
+      string.split('').forEach( element => {
+        num += element.charCodeAt(0)
+      })
+    }
+    return num
+  }
