@@ -91,3 +91,11 @@ function uniTotal (string) {
       return "unknown value"
     }
   }
+
+//8 kyu
+//Grasshopper - Order of operations
+
+//Solution
+function orderOperations () {
+  return (2 + 2) * (2 + 2) * 2
+}
