@@ -123,3 +123,12 @@ function stairsIn20(s){
   
   return totalYear * 20
 }
+
+//7 kyu
+//Spacify
+
+//Solution
+function spacify(str) {
+  // return 
+  return str.split('').join(' ')
+}
