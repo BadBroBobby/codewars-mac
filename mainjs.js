@@ -99,3 +99,14 @@ function uniTotal (string) {
 function orderOperations () {
   return (2 + 2) * (2 + 2) * 2
 }
+
+//8 kyu
+//Template Strings
+
+//Solution
+var TempleStrings = function(obj, feature) {
+  return `${obj} are ${feature}`
+}
+
+//or arrouw function
+var TempleStrings = (obj, feature) => `${obj} are ${feature}`
