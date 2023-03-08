@@ -110,3 +110,16 @@ var TempleStrings = function(obj, feature) {
 
 //or arrouw function
 var TempleStrings = (obj, feature) => `${obj} are ${feature}`
+
+//8 kyu
+//How many stairs will Suzuki climb in 20 years?
+
+//Solution
+function stairsIn20(s){
+  //your code here
+  
+  let reducedArr = s.map( array => array.reduce( (acc,c) => acc+c, 0) )
+  let totalYear = reducedArr.reduce( (acc,c) => acc+c, 0) 
+  
+  return totalYear * 20
+}
