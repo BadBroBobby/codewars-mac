@@ -148,3 +148,18 @@ function maxDiff(list) {
   
   return largestVal - smallestVal
 };
+
+//8 kyu
+//NBA full 48 minutes average
+
+//Solution
+function pointsPer48(ppg, mpg) {
+  let totalScore = ppg / mpg * 48;
+  
+  if(ppg == 0 || mpg == 0){
+    return 0;
+  }
+  
+  
+  return Number(totalScore.toFixed(1));
+}
