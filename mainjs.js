@@ -134,3 +134,17 @@ function spacify(str) {
 }
 //
 
+//7 kyu
+//max diff - easy
+
+//Solution
+function maxDiff(list) {
+  let largestVal = Math.max(...list)
+  let smallestVal = Math.min(...list)
+  
+  if(list.length <= 1){
+    return 0
+  }
+  
+  return largestVal - smallestVal
+};
