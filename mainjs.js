@@ -163,3 +163,19 @@ function pointsPer48(ppg, mpg) {
   
   return Number(totalScore.toFixed(1));
 }
+
+//6 kyu
+//Reverse every other word in the string
+
+//Solution
+function reverse(str){
+  
+  let arr = str.split(" "); 
+
+  for(let i = 1; i<arr.length; i+=2){
+      arr[i] = arr[i].split('').reverse().join(""); 
+  }
+  
+  return arr.join(" ").trim(); 
+  
+}
