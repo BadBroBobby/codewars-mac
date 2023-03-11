@@ -179,3 +179,19 @@ function reverse(str){
   return arr.join(" ").trim(); 
   
 }
+
+//7 kyu
+//Sort Out The Men From Boys
+
+//Solution
+function menFromBoys(arr){
+  
+  //your code here
+  let men = arr.filter( num => num % 2 == 0).sort((a, b) => a-b)
+  let boys = arr.filter( num => num % 2 != 0).sort((a, b) => a-b).reverse()
+  
+  let uniqueMen = [...new Set(men)]
+  let uniqueBoys = [...new Set(boys)]
+  
+  return uniqueMen.concat(uniqueBoys)
+}
